@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, InputGroup, FormControl, Card, Button, Row, Col } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import Header from './components/Header';
 
 const CLIENT_ID = '346833786f664d3687393f8e726c5dd7';
 const CLIENT_SECRET = '824b9b846b104ebe8d3e066fa81bc836';
@@ -60,7 +61,8 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
+      <Header />
+      <Container >
         <InputGroup className='mb-3' size='lg'>
           <FormControl
             placeholder='Search For Song'
